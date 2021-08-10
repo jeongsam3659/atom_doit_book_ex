@@ -115,6 +115,27 @@ cursor: pointer;
  display: flex !important;
  >> !important??
 
+
+*
+ 카운터 속성.
+  카운터 증가를 위한 속성 . '시계 카운터처럼'
+  counter-reset     >> [카운터명][정수]
+    - 카운터를 초기화하기 위한 속성.
+
+  counter-increment >> [카운터명][정수]
+    - 카운터를 증가시키위한 속성
+
+  counter()         >> [카운터명][카운터 스타일][문자열]
+    - 카운터를 사용하기 위한 함수
+
+
+
+
+
+
+
+
+    
  atom
  >
  선정리
