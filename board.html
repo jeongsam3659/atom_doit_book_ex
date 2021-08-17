@@ -30,9 +30,144 @@
         box-sizing: border-box;
       }
 
+      /* 서브 헤더영역Css */
+      .sub_header_section{
+        order:3;
+        padding:480px 0;
+        padding:3.000rem 0;
+        text-align:center;
+        background:#219af7;
+      }
+
+      .sub_header_section h2{
+        margin-bottom:12px;
+        margin-bottom:0.750rem;
+        font_size:1.313em;
+        font-size:1.313rem;
+        color:#fff;
+      }
+
+      .breadcrum_list li{
+        display:inline;
+        font-size:0.813em;
+        font-size:0.813rem;
+        font-weight:bold;
+      }
+
+      /* 콘텐츠 영역Css */
+      .content_section{
+        order:4;
+        padding:20px;
+        padding:1.250rem;
+        background:#fff;
+      }
+
+      .content_section > div{
+        margin-top:60px;
+        margin-top:3.750rem;
+      }
+
+      .content_section > div:first-child{
+        margin-top:0;
+      }
+
+      .content_row_1{
+        text-align:center;
+      }
+
+      .content_row_1 img{
+        max-width:100%;
+      }
+
+      .content_row_1 h3{
+        margin:26px 0 14px 0;
+        margin:1.625rem 0 0.875rem 0;
+        font-size:1.626em;
+        font-size:1.626rem;
+        color:#333;
+      }
+
+      .content_row_1 p{
+        font_size:0.939em;
+        font_size:0.939rem;
+        line-height:26px;
+        line-height:1.625rem;
+        color:#444;
+      }
+
+      .content_row_2 > article{
+        margin-top:40px;
+        margin-top: 2.500rem;
+      }
+
+      .content_row_2 > article:first-child{
+        margin-top:0;
+      }
+
+      .content_row_2 img{
+        max-width:100%;
+      }
+
+      .content_row_2 h4{
+        margin:26px 0 14px 0;
+        margin:1.625rem 0 0.875rem 0;
+        font-size:1.188em;
+        font-size:1.188rem;
+        color:#333;
+      }
+
+      .content_row_2 p{
+        font-size:0.813em;
+        font_size:0.813rem;
+        line-height:21px;
+        line-height:1.313rem;
+        color:#444;
+      }
+
+      .content_row_3 h4{
+        margin-bottom:20px;
+        margin-bottom:1.250rem;
+        padding-bottom:8px;
+        padding-bottom:0.500rem;
+        font-size:1.188em;
+        font-size:1.188rem;
+        border-bottom:3px solid #2ecc71;
+        color:#333;
+      }
+
+      .para p:first-child{
+        margin-bottom:30px;
+        margin-bottom:1.875rem;
+      }
+
+      .para p{
+        font-size:0.813em;
+        font-size:0.813rem;
+        line-height:21px;
+        line-height:1.313rem;
+        color:#444;
+      }
+
+
+
+      /* footer영역 */
+      .footer{
+        order:5;
+      }
+
       /* 테블릿용 CSS */
       @media all and (min-wdith:768px) {
       /* 기본CSS */
+      /* 콘텐츠 영역 */
+      .content_section{
+        padding:40px;
+        padding:2.500rem;
+      }
+
+      .content_section > div{
+        margin-top:120px;
+        margin-top:7.500rem;
+      }
 
       }
       /* PC용 CSS */
@@ -42,16 +177,101 @@
         position: relative;
         width:90%;
       }
+      /* 서브 헤더영역Css */
+      .sub_header_section{
+        order:2;
+      }
 
+      /* 콘텐츠 영역Css */
+      .content_section{
+        order:3;
+        padding:60px;
+        padding:3.750rem;
+      }
+
+      .content_row_2{
+        display:flex;
+        justify-content:space-between;
+      }
+
+      .content_row_2 article{
+        width:30%; /* 252px / 840px */
+        margin:0;
+      }
+
+      .para{
+        display:flex;
+        justify-content:space-between;
+      }
+
+      .para p{
+        width:47.61904761904762%; /* 400px / 840px */
+        margin:0;
+      }
+
+      /* footer영역 css */
+      .footer{
+        order:4;
+      }
+    }
     </style>
 
 
   </head>
   <body>
-    <!-- 0731 -->
-    <div id="wrap">
+    <section class="content_section">
+      <div class="content_row_1">
+        <table class="board_table">
+          <caption>문의사항 게시판</caption>
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>제목</th>
+              <th>글쓴이</th>
+              <th>조회수</th>
+            </tr>
+          </thead>
 
-    </div>
-
+          <tbody>
+            <tr>
+              <td>5</td>
+              <td><a href="#">저는 누굴까요?</a></td>
+              <td>Flat Design</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><a href="#">Blog에서 다양한 정보를 만나보세요.</a></td>
+              <td>Flat Design</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><a href="#">FLAT Design은 원색을 강조합니다.</a></td>
+              <td>Flat Design</td>
+              <td>67</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><a href="#">홈페이지 리뉴얼 소식</a></td>
+              <td>Flat Design</td>
+              <td>96</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><a href="#">안녕하세요 홈페이지를 오픈했습니다.</a></td>
+              <td>Flat Design</td>
+              <td>123</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="content_row_2">
+        생략
+      </div>
+      <div class="content_row_3">
+        생략
+      </div>
+    </section>
   </body>
 </html>
